@@ -20,7 +20,7 @@ config = Config(
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 model = Transformer(config).to(device)
-model.load_state_dict(torch.load('model.pth'))
+model.load_state_dict(torch.load('model.pth', map_location=device))
 
 def generate_text(text, temperature=0.5):
     ctx = text
