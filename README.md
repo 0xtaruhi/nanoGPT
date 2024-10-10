@@ -49,7 +49,7 @@ To train the model, run the following command:
 python train.py
 ```
 
-This will generate a trained model file named model.pkl.
+On a single A100 GPU, training takes approximately 6 minutes. This will generate a trained model file named model.pkl.
 
 ### Evaluation
 
